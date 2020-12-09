@@ -27,6 +27,7 @@
       <list>
         <option value="$PROJECT_DIR$/Solution1.sln" />
         <option value="$PROJECT_DIR$/Day4/Program.cs" />
+        <option value="$PROJECT_DIR$/Day2/Program.cs" />
       </list>
     </option>
   </component>
@@ -34,7 +35,7 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
   </component>
-  <component name="RunManager" selected=".NET Project.Day4">
+  <component name="RunManager" selected=".NET Project.Day2">
     <configuration name="Day1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -49,6 +50,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Day2" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Day2/bin/Debug/netcoreapp3.0/Day2.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day2/bin/Debug/netcoreapp3.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day2/Day2.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -71,6 +90,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.Day2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />
@@ -82,22 +106,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="423" height="464" key="DebuggerActiveHint/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607552112172" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1607552800382">
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1607554167893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607552800382" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1607552800382">
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607554167893" />
+    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1607554167893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607552800382" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1607552800382">
+    <state width="1877" height="137" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607554167893" />
+    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1607554167893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607552800382" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1607552800382">
+    <state width="1877" height="137" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607554167893" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1607554167893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607552800382" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607554167893" />
     <state width="1877" height="295" key="GridCell.Tab.1.bottom" timestamp="1607552468708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

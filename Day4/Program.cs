@@ -8,8 +8,9 @@ namespace Day4 {
 	static class Program {
 		static void Main(string[] args) {
 			IEnumerable<string> lines = File.ReadLines("input.txt");
-			var passportTexts = new List<string>();
 			
+			//swoop passports together into single lines
+			var passportTexts = new List<string>();
 			var currentPassportData = new StringBuilder();
 			foreach (string line in lines) {
 				if (string.IsNullOrWhiteSpace(line)) {
@@ -22,13 +23,16 @@ namespace Day4 {
 					currentPassportData.Append(" ");
 				currentPassportData.Append(line);
 			}
-			passportTexts.Add(currentPassportData.ToString());
+			if (currentPassportData.Length != 0) //append last passport if needed
+				passportTexts.Add(currentPassportData.ToString());
 
-			var passports = passportTexts.Select(
+			//then parse them into fields with keys and values
+			Dictionary<string, string>[] passports = passportTexts.Select(
 					text => text.Split(" ").ToDictionary(
 							part => part.Substring(0, part.IndexOf(':')), 
-							part => part.Substring(part.IndexOf(':')+1)));
+							part => part.Substring(part.IndexOf(':')+1))).ToArray();
 
+			//here we define the fields and their requirements
 			var fields = new Dictionary<string, Func<string, bool>>() {
 				{"byr", yearString => int.TryParse(yearString, out int year) && year >= 1920 && year <= 2002 }, 
 				{"iyr", yearString => int.TryParse(yearString, out int year) && year >= 2010 && year <= 2020 },
@@ -48,12 +52,13 @@ namespace Day4 {
 				{"pid", id => int.TryParse(id, out _) && id.Length == 9},
 				/*{"cid", validation}*/};
 			
-				
+			//and do the simple check if the fields exist
 			int validPassports = passports.Count(passKeys => fields.Keys.All(
 					key => passKeys.Keys.Contains(key)));
 			
 			Console.WriteLine($"There are {validPassports} valid passports");
 			
+			//and then if the fields fill the requirements
 			int validPassportsStrict = passports.Count(
 				passport => fields.All(
 					field => passport.TryGetValue(field.Key, out string value) && field.Value(value)));
