@@ -12,11 +12,7 @@
     <projectFile>Day9/Day9.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOC2020.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOC2020.sln" afterDir="false" />
-    </list>
+    <list default="true" id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -132,7 +129,25 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day1/Day1.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day01/Day01.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Day10" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day10/Day10.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -150,7 +165,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day2/Day2.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day02/Day02.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -168,7 +183,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day3/Day3.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day03/Day03.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -186,7 +201,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day4/Day4.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day04/Day04.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -204,7 +219,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day5/Day5.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day05/Day05.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -222,7 +237,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day6/Day6.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day06/Day06.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -240,7 +255,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day7/Day7.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day07/Day07.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -258,7 +273,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day8/Day8.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day08/Day08.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -276,7 +291,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day9/Day9.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day09/Day09.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -295,7 +310,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607587267223</updated>
-      <workItem from="1607587269012" duration="23800000" />
+      <workItem from="1607587269012" duration="24657000" />
     </task>
     <servers />
   </component>
@@ -308,94 +323,94 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1487" y="235" width="1328" height="592" key="#xdebugger.evaluate" timestamp="1607602186276">
+    <state x="-1487" y="235" width="1328" height="592" key="#xdebugger.evaluate" timestamp="1607618134237">
       <screen x="-1920" y="71" width="1920" height="1040" />
     </state>
-    <state x="-1487" y="235" width="1328" height="592" key="#xdebugger.evaluate/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607602186276" />
+    <state x="-1487" y="235" width="1328" height="592" key="#xdebugger.evaluate/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618134237" />
     <state width="467" height="464" key="DebuggerActiveHint" timestamp="1607616818646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="467" height="464" key="DebuggerActiveHint/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607616818646" />
-    <state width="1877" height="205" key="GridCell.Tab.0.bottom" timestamp="1607617498156">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1607618139271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="205" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617498156" />
-    <state width="1877" height="205" key="GridCell.Tab.0.center" timestamp="1607617498156">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618139271" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1607618139271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="205" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617498156" />
-    <state width="1877" height="205" key="GridCell.Tab.0.left" timestamp="1607617498156">
+    <state width="1877" height="308" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618139271" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1607618139271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="205" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617498156" />
-    <state width="1877" height="205" key="GridCell.Tab.0.right" timestamp="1607617498156">
+    <state width="1877" height="308" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618139271" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1607618139271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="205" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617498156" />
-    <state width="1877" height="308" key="GridCell.Tab.1.bottom" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618139271" />
+    <state width="1877" height="308" key="GridCell.Tab.1.bottom" timestamp="1607618103022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.1.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.1.center" timestamp="1607617109702">
+    <state width="1877" height="308" key="GridCell.Tab.1.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618103022" />
+    <state width="1877" height="308" key="GridCell.Tab.1.center" timestamp="1607618103022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.1.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109702" />
-    <state width="1877" height="308" key="GridCell.Tab.1.left" timestamp="1607617109702">
+    <state width="1877" height="308" key="GridCell.Tab.1.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618103022" />
+    <state width="1877" height="308" key="GridCell.Tab.1.left" timestamp="1607618103022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.1.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109702" />
-    <state width="1877" height="308" key="GridCell.Tab.1.right" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.1.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618103022" />
+    <state width="1877" height="308" key="GridCell.Tab.1.right" timestamp="1607618103022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.1.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.2.bottom" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.1.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618103022" />
+    <state width="1877" height="308" key="GridCell.Tab.2.bottom" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.2.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.2.center" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.2.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.2.center" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.2.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.2.left" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.2.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.2.left" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.2.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.2.right" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.2.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.2.right" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.2.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.3.bottom" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.2.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.3.bottom" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.3.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.3.center" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.3.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.3.center" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.3.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.3.left" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.3.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.3.left" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.3.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.3.right" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.3.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.3.right" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.3.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.4.bottom" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.3.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.4.bottom" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.4.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.4.center" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.4.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.4.center" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.4.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.4.left" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.4.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.4.left" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.4.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
-    <state width="1877" height="308" key="GridCell.Tab.4.right" timestamp="1607617109703">
+    <state width="1877" height="308" key="GridCell.Tab.4.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
+    <state width="1877" height="308" key="GridCell.Tab.4.right" timestamp="1607618101966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.4.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607617109703" />
+    <state width="1877" height="308" key="GridCell.Tab.4.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607618101966" />
     <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1607615391286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
