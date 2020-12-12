@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading;
 
 namespace Day11 {
 	public static class Program {
@@ -23,6 +24,7 @@ namespace Day11 {
 			Console.WriteLine($"When the situation stabilizes there are {occupiedSeats} occupied seats.");
 			sw.Stop();
 			Console.WriteLine($"First part needed {sw.ElapsedMilliseconds}");
+		
 			sw.Restart();
 			
 			buffer.Set(data);
@@ -68,30 +70,27 @@ namespace Day11 {
 				buffer = temp;
 			} while (changed);
 		}
+		
+		static readonly (int, int)[] Directions = {(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)};
 
 		static int DirectOccupiedNeighbors(Flat2D<State> grid, int x, int y) {
 			int occupiedNeighbors = 0;
-			for (int dx = -1; dx <= 1; dx++) {
-				for (int dy = -1; dy <= 1; dy++) {
-					if (dx != 0 || dy != 0) {
-						if (grid.GetOrDefault(x + dx, y + dy) == State.Occupied)
-							occupiedNeighbors++;
-					}
-				}
+			foreach ((int dx, int dy) in Directions) {
+				int posX = x + dx, posY = y + dy;
+				if (grid.InRange(posX, posY) && grid[posX, posY] == State.Occupied)
+					occupiedNeighbors++;
 			}
 			return occupiedNeighbors;
 		}
-		
+
+		static (int x, int y)[] rayTargets;
 		static int FarOccupiedNeighbors(Flat2D<State> grid, int x, int y) {
+			rayTargets ??= new (int x, int y)[grid.Width * grid.Height];
 			int occupiedNeighbors = 0;
-			for (int dx = -1; dx <= 1; dx++) {
-				for (int dy = -1; dy <= 1; dy++) {
-					if (dx != 0 || dy != 0) {
-						var pos = RayTraceChairs(grid, (x, y), (dx, dy));
-						if (grid.GetOrDefault(pos.x, pos.y) == State.Occupied)
-							occupiedNeighbors++;
-					}
-				}
+			foreach ((int dx, int dy) in Directions) {
+				(int posX, int posY) = RayTraceChairs(grid, (x, y), (dx, dy));
+				if (grid.InRange(posX, posY) && grid[posX, posY] == State.Occupied)
+						occupiedNeighbors++;
 			}
 			return occupiedNeighbors;
 		}
@@ -135,16 +134,8 @@ namespace Day11 {
 		}
 		
 		public T this[int x, int y] {
-			get {
-				if(!InRange(x, y))
-					throw new IndexOutOfRangeException();
-				return arr[y * Width + x];
-			}
-			set {
-				if(!InRange(x, y))
-					throw new IndexOutOfRangeException();
-				arr[y * Width + x] = value;
-			}
+			get => arr[y * Width + x];
+			set => arr[y * Width + x] = value;
 		}
 
 		public bool InRange(int x, int y) {
@@ -152,11 +143,15 @@ namespace Day11 {
 		}
 
 		public T GetOrDefault(int x, int y) {
-			try {
-				return this[x, y];
-			} catch (IndexOutOfRangeException e) {
-				return default;
-			}
+			return InRange(x, y) ? arr[ConvertIndex(x, y)] : default;
+		}
+
+		int ConvertIndex(int x, int y) {
+			return y * Width + x;
+		}
+
+		public T[] GetArray() {
+			return arr;
 		}
 
 		public IEnumerator<T> GetEnumerator() {
