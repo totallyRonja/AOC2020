@@ -122,6 +122,71 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="Day10" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day10.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day10.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Day11" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day11.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day11.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Day12" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day12.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day12.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Day13" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day13.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day13.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Day14" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day14.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day14.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
