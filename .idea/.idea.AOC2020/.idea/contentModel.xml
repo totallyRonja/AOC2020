@@ -187,6 +187,18 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="Day15" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day15.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Day15.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
