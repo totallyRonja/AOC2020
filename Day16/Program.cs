@@ -51,7 +51,6 @@ namespace Day16 {
 
 			otherTickets = otherTickets.Where(ticket => !ticket!.invalid.Any()).ToList(); //throw out invalid tickets
 
-			//I know I can already throw out the ones without "departure" here, but I dont wanna
 			var categoryNames = rules.Select(rule => rule.name).ToArray();
 			var categoryOrder = Enumerable.Repeat(categoryNames, categoryNames.Length)
 				.Select(names => new HashSet<string>(names)).ToArray();
@@ -67,8 +66,9 @@ namespace Day16 {
 			}
 
 			var cleaned = new HashSet<string>();
+			string[] toClean;
 			do {
-				var toClean = categoryOrder.Where(set => set.Count == 1 && !cleaned.Contains(set.First()))
+				toClean = categoryOrder.Where(set => set.Count == 1 && !cleaned.Contains(set.First()))
 					.Select(set => set.First()).ToArray();
 				foreach (var set in categoryOrder) {
 					if(set.Count <= 1)
@@ -76,7 +76,7 @@ namespace Day16 {
 					set.ExceptWith(toClean);
 				}
 				cleaned.UnionWith(toClean);
-			} while (categoryOrder.Any(set => set.Count > 1));
+			} while (toClean.Any());
 
 			categoryNames = categoryOrder.Select(cat => cat.FirstOrDefault()).ToArray();
 

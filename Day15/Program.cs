@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Day15 {
@@ -9,17 +10,25 @@ namespace Day15 {
 			int play2020 = SpeakingGame(input, 2020);
 			Console.WriteLine($"The 2020th number spoken is {play2020}");
 
+			var watch = new Stopwatch();
+			watch.Start();
 			int play30m = SpeakingGame(input, 30000000);
+			Console.WriteLine(watch.ElapsedMilliseconds);
 			Console.WriteLine($"The 20 millionth number spoken is {play30m}");
 		}
 
 		static int SpeakingGame(int[] input, int duration) {
-			var numbers = input.SkipLast(1).Select((value, index) => (value, index))
-				.ToDictionary(value => value.value, value => value.index);
+			var numbers = new int[duration];
+			for (int index = 0; index < input.Length-1; index++) {
+				int i = input[index];
+				numbers[i] = index;
+			}
 			int count = input.Length;
 			int lastNumber = input.Last();
 			while (count < duration) {
-				int newNumber = numbers.TryGetValue(lastNumber, out int value) ? (count - 1 - value) : 0;
+				int newNumber = numbers[lastNumber];
+				if (newNumber != 0)
+					newNumber = count - 1 - newNumber;
 				numbers[lastNumber] = count - 1;
 				lastNumber = newNumber;
 				count++;
