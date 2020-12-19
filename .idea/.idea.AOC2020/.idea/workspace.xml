@@ -18,6 +18,7 @@
     <projectFile>Day15/Day15.csproj</projectFile>
     <projectFile>Day16/Day16.csproj</projectFile>
     <projectFile>Day17/Day17.csproj</projectFile>
+    <projectFile>Day18/Day18.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -40,9 +41,9 @@
   <component name="ChangeListManager">
     <list default="true" id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOC2020.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOC2020.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day13/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day13/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,46 +54,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/26/Select.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/E8/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/46/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CBF18136-2786-4CA3-A4A7-275F0868CD32/7/CaptureCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/D/Queue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/C/Aggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Day09/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/2C/Sum.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/27/Select.SpeedOpt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/A8/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/A/HashSet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/2D/Take.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/21/Min.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/26/Select.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/46/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/D/Queue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Day09/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/38/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/8C/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/2D/Take.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/C/Aggregate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/21/Min.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CBF18136-2786-4CA3-A4A7-275F0868CD32/7/CaptureCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/A8/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/E8/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/27/Select.SpeedOpt.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Day5/Program.cs" />
-        <option value="$PROJECT_DIR$/Day6/Program.cs" />
-        <option value="$PROJECT_DIR$/Day7/Program.cs" />
-        <option value="$PROJECT_DIR$/Day8/input.txt" />
-        <option value="$PROJECT_DIR$/Day8/Program.cs" />
-        <option value="$PROJECT_DIR$/Day9/input.txt" />
-        <option value="$PROJECT_DIR$/Day9/Program.cs" />
-        <option value="$PROJECT_DIR$/Day10/input.txt" />
-        <option value="$PROJECT_DIR$/Day11/Program.cs" />
-        <option value="$PROJECT_DIR$/Day12/input.txt" />
-        <option value="$PROJECT_DIR$/Day12/Program.cs" />
-        <option value="$PROJECT_DIR$/Day14/Program.cs" />
-        <option value="$PROJECT_DIR$/Day14/input.txt" />
-        <option value="$PROJECT_DIR$/Day10/Program.cs" />
-        <option value="$PROJECT_DIR$/Day16/input.txt" />
-        <option value="$PROJECT_DIR$/Day15/Program.cs" />
-        <option value="$PROJECT_DIR$/Day16/Program.cs" />
-        <option value="$PROJECT_DIR$/Day13/Program.cs" />
-        <option value="$PROJECT_DIR$/Day17/Program.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Day18/Day18.csproj" />
+      <option value="$PROJECT_DIR$/Day18/Program.cs" />
+      <option value="$PROJECT_DIR$/Day18/input.txt" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1lSOwmwhfV1pIUKiTt37rO1Ty2H" />
   <component name="ProjectViewState">
@@ -100,13 +85,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35010824" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Day17">
+  <component name="RunManager" selected=".NET Project.Day18">
     <configuration name="Day1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -260,6 +246,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day17/Day17.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Day18" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day18/Day18.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -430,7 +434,9 @@
       <workItem from="1608019724557" duration="1286000" />
       <workItem from="1608103494364" duration="8339000" />
       <workItem from="1608112564084" duration="4619000" />
-      <workItem from="1608184326476" duration="3648000" />
+      <workItem from="1608184326476" duration="10862000" />
+      <workItem from="1608277248299" duration="915000" />
+      <workItem from="1608278500481" duration="15258000" />
     </task>
     <servers />
   </component>
@@ -453,135 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="239" y="312" width="721" height="592" key="#xdebugger.evaluate" timestamp="1608110162520">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="239" y="312" width="721" height="592" key="#xdebugger.evaluate/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608110162520" />
-    <state x="-1487" y="235" width="1328" height="592" key="#xdebugger.evaluate/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607844091133" />
-    <state width="467" height="464" key="DebuggerActiveHint" timestamp="1608109855702">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="467" height="464" key="DebuggerActiveHint/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608109855702" />
-    <state width="467" height="464" key="DebuggerActiveHint/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936335052" />
-    <state width="1877" height="68" key="GridCell.Tab.0.bottom" timestamp="1608187534492">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112894845" />
-    <state width="1877" height="68" key="GridCell.Tab.0.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608187534492" />
-    <state width="1877" height="68" key="GridCell.Tab.0.center" timestamp="1608187534492">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112894844" />
-    <state width="1877" height="68" key="GridCell.Tab.0.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608187534492" />
-    <state width="1877" height="68" key="GridCell.Tab.0.left" timestamp="1608187534492">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112894844" />
-    <state width="1877" height="68" key="GridCell.Tab.0.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608187534492" />
-    <state width="1877" height="68" key="GridCell.Tab.0.right" timestamp="1608187534492">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112894845" />
-    <state width="1877" height="68" key="GridCell.Tab.0.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608187534492" />
-    <state width="1877" height="457" key="GridCell.Tab.1.bottom" timestamp="1608112465136">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.1.bottom/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465136" />
-    <state width="1877" height="289" key="GridCell.Tab.1.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.1.center" timestamp="1608112465136">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.1.center/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465136" />
-    <state width="1877" height="289" key="GridCell.Tab.1.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.1.left" timestamp="1608112465136">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.1.left/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465136" />
-    <state width="1877" height="289" key="GridCell.Tab.1.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.1.right" timestamp="1608112465136">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.1.right/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465136" />
-    <state width="1877" height="289" key="GridCell.Tab.1.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.2.bottom" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.2.bottom/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.2.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.2.center" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.2.center/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.2.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.2.left" timestamp="1608112465136">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.2.left/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465136" />
-    <state width="1877" height="289" key="GridCell.Tab.2.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.2.right" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.2.right/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.2.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.3.bottom" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.3.bottom/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.3.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370453" />
-    <state width="1877" height="457" key="GridCell.Tab.3.center" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.3.center/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.3.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.3.left" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.3.left/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.3.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.3.right" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.3.right/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.3.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370452" />
-    <state width="1877" height="457" key="GridCell.Tab.4.bottom" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.4.bottom/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.4.bottom/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370453" />
-    <state width="1877" height="457" key="GridCell.Tab.4.center" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.4.center/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.4.center/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370453" />
-    <state width="1877" height="457" key="GridCell.Tab.4.left" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.4.left/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.4.left/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370453" />
-    <state width="1877" height="457" key="GridCell.Tab.4.right" timestamp="1608112465137">
-      <screen x="-1920" y="71" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="457" key="GridCell.Tab.4.right/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608112465137" />
-    <state width="1877" height="289" key="GridCell.Tab.4.right/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607936370453" />
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1608184503081">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="323" key="Rider.ProjectTemplateDialog.Size/-1920.71.1920.1040/0.0.1920.1040@-1920.71.1920.1040" timestamp="1608104207091" />
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608184503081" />
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1607673467791">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="221" key="RiderGenerateDialog/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607673467791" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1607602010099">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607602010099" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608186376315">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.71.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608186376315" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,12 +490,20 @@
           </properties>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Day18/Program.cs</url>
+          <line>16</line>
+          <properties documentPath="D:\gamedev\Testing\AOC2020\Day18\Program.cs" initialLine="16" containingFunctionPresentation="method 'Main'">
+            <startOffsets>
+              <option value="570" />
+            </startOffsets>
+            <endOffsets>
+              <option value="602" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="DotNetProject">
-        <watch expression="possibleFields.ToArray()" language="C#" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
