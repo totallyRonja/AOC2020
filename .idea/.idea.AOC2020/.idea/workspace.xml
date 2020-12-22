@@ -43,8 +43,11 @@
   <component name="ChangeListManager">
     <list default="true" id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOC2020.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOC2020.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20/Day20.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day20/Day20.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day20/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day20/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,59 +58,55 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8A925295-E8E8-4706-B450-D8A14AE8C95E/3f/ed6068cf/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Day20/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/17B/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C80B499D-ADA7-49E0-A8EE-7A9B1744160B/e2/4ab69308/DebugProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8A925295-E8E8-4706-B450-D8A14AE8C95E/c0/dcff8dc9/ReadLinesIterator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/D/AnyAll.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/13/Count.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8D2C879-DE5D-4407-A14A-313591EA687C/26/cc1eeb4b/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Day19/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/38/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/2C/Sum.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/A/HashSet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/702AC2C1-5E9F-4AC7-AB37-D6DF6304B5E4/4/AnyAll.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/26/Select.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/46/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/D/Queue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Day09/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/8C/Int32.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/680D0A75-2A4E-40EB-A596-BAD88FBFB729/4A/MathF.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/2D/Take.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D8D2C879-DE5D-4407-A14A-313591EA687C/46/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/C/Aggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/702AC2C1-5E9F-4AC7-AB37-D6DF6304B5E4/10/First.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/21/Min.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/680D0A75-2A4E-40EB-A596-BAD88FBFB729/A9/Nullable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CBF18136-2786-4CA3-A4A7-275F0868CD32/7/CaptureCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/A8/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/E8/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/081372C7-3509-4D45-BD06-A6A9BC610C6B/27/Select.SpeedOpt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/Day18/Day18.csproj" />
-      <option value="$PROJECT_DIR$/Day18/input.txt" />
-      <option value="$PROJECT_DIR$/Day18/Program.cs" />
-      <option value="$PROJECT_DIR$/Day19/input.txt" />
-      <option value="$PROJECT_DIR$/Day19/Program.cs" />
-      <option value="$PROJECT_DIR$/Day20/input.txt" />
-      <option value="$PROJECT_DIR$/Day20/Program.cs" />
-    </changedPaths>
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Day20/input.txt" />
+        <option value="$PROJECT_DIR$/Day20/Program.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1lSOwmwhfV1pIUKiTt37rO1Ty2H" />
   <component name="ProjectViewState">
@@ -116,10 +115,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35010824" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.032831736" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -485,7 +486,10 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="" />
@@ -505,11 +509,13 @@
       <workItem from="1608277248299" duration="915000" />
       <workItem from="1608278500481" duration="25537000" />
       <workItem from="1608448230098" duration="28064000" />
+      <workItem from="1608634630824" duration="2601000" />
+      <workItem from="1608641064853" duration="16674000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -528,6 +534,104 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="113" y="233" key="#xdebugger.evaluate" timestamp="1608651712509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="113" y="233" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1608651712509" />
+    <state width="465" height="464" key="DebuggerActiveHint" timestamp="1608656282359">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="465" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1608656282359" />
+    <state width="1493" height="123" key="GridCell.Tab.0.bottom" timestamp="1608657468657">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="123" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608657468657" />
+    <state width="1493" height="123" key="GridCell.Tab.0.center" timestamp="1608657468656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="123" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608657468656" />
+    <state width="1493" height="123" key="GridCell.Tab.0.left" timestamp="1608657468656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="123" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608657468656" />
+    <state width="1493" height="123" key="GridCell.Tab.0.right" timestamp="1608657468656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="123" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608657468656" />
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.2.bottom" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.2.center" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.2.left" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.2.right" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.3.bottom" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.3.center" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.3.left" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.3.right" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.4.bottom" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.4.center" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.4.left" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1493" height="128" key="GridCell.Tab.4.right" timestamp="1608656394079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="128" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1608656394079" />
+    <state width="1384" height="419" key="XDebugger.FullValuePopup" timestamp="1608651767227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1384" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1608651767227" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1608654013432">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608654013432" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -535,56 +639,21 @@
           <condition expression="diff != 1 &amp;&amp; diff != 3" language="C#" />
           <url>file://$PROJECT_DIR$/Day10/Program.cs</url>
           <line>18</line>
-          <properties documentPath="D:\gamedev\Testing\AOC2020\Day10\Program.cs" initialLine="18">
-            <startOffsets>
-              <option value="564" />
-            </startOffsets>
-            <endOffsets>
-              <option value="577" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamedev\Testing\AOC2020\Day10\Program.cs" initialLine="18" />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Day16/Program.cs</url>
           <line>80</line>
-          <properties documentPath="D:\gamedev\Testing\AOC2020\Day16\Program.cs" initialLine="76">
-            <startOffsets>
-              <option value="2802" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2878" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamedev\Testing\AOC2020\Day16\Program.cs" initialLine="76" />
           <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Day20/Program.cs</url>
-          <line>133</line>
-          <properties documentPath="D:\gamedev\Testing\AOC2020\Day20\Program.cs" initialLine="93" containingFunctionPresentation="method 'Main'">
-            <startOffsets>
-              <option value="5379" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5411" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Day20/Program.cs</url>
-          <line>97</line>
-          <properties documentPath="D:\gamedev\Testing\AOC2020\Day20\Program.cs" initialLine="97" containingFunctionPresentation="method 'Main'">
-            <startOffsets>
-              <option value="3946" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3984" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="Vis(orderedImage, tileSize)" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

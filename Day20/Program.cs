@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks.Dataflow;
 
 namespace Day20 {
 	public static class Program {
@@ -39,7 +40,7 @@ namespace Day20 {
 				tiles.Add(tileInProgress);
 
 			//extract edges
-			(int start, int walk)[] edges = {(0, 1), (0, tileSize), (tileSize*(tileSize-1), 1), (tileSize-1, tileSize)};
+			(int start, int walk)[] edges = {(0, 1), (tileSize*(tileSize-1), -tileSize), (tileSize*tileSize-1, -1), (tileSize-1, tileSize)};
 			foreach (Tile tile in tiles) {
 				tile.Edges = new bool[4][];
 				for (int i = 0; i < tile.Edges.Length; i++) {
@@ -66,115 +67,238 @@ namespace Day20 {
 
 			Console.WriteLine(tileNeighbors.Max(tn => tn.neighbor.Count(n => n)));
 			Console.WriteLine(tileNeighbors.Count(tn => tn.neighbor.Count(n => n) == 3));
-			var corners = tileNeighbors.Where(tn => tn.neighbor.Count(n => n) == 2).ToArray();
-			long result = corners.Aggregate(1L, (prod, corner) => prod * corner.tile.Id);
-			Console.WriteLine($"The corners {string.Join(", ", corners.Select(c => c.tile.Id))} multiplied result in {result}");
+			var corners = tileNeighbors.Where(tn => tn.neighbor.Count(n => n) <= 2).ToArray();
+			long cornerProduct = corners.Aggregate(1L, (prod, corner) => prod * corner.tile.Id);
+			Console.WriteLine($"The corners {string.Join(", ", corners.Select(c => c.tile.Id))} multiplied result in {cornerProduct}");
 
 			int imageSize = (int) Math.Sqrt(tiles.Count);
 			var remainingTiles = tiles.ToHashSet();
 			remainingTiles.Remove(corners.First().tile);
-			var orderedImage = new Flat2D<(Tile tile, (int rot, bool flipX, bool flipY) trans)>(imageSize, imageSize);
+			var orderedImage = new Flat2D<Tile>(imageSize, imageSize);
 			var firstCorner = corners.First();
 			int rot = Enumerable.Range(0, 4).First(n => !firstCorner.neighbor[n] && !firstCorner.neighbor[(n + 1) % 4]);
-			//rot = (4 - rot) % 4;
-			orderedImage[0, 0] = (firstCorner.tile, (rot, false, false));
+			rot = (rot - 1) % 4;
+			firstCorner.tile.Trans.rot = rot;
+			firstCorner.tile.Trans.flipY = true;
+			orderedImage[0, 0] = firstCorner.tile;
 			for (int y = 0; y < imageSize; y++) {
 				for (int x = 0; x < imageSize; x++) {
 					//skip already set ones (should only be first one)
-					if(orderedImage[x, y].tile != null)
+					if(orderedImage[x, y] != null)
 						continue;
 					
 					if (x == 0) {
 						//first one in a row only depends on the one above it
 						var neighbor = orderedImage[x, y - 1];
-						var match = remainingTiles.Select(tile => (tile, MatchingEdge(tile, neighbor.tile)))
-							.First(e => e.Item2 != null && ApplyTransform(e.Item2.Value.Item2, neighbor.Item2) == 2);
+						var neighborEdge = ApplyTransform(2, neighbor.Trans);
+						var match = remainingTiles
+							.Select(tile => (tile, match: MatchingEdge(tile, neighbor.Edges[neighborEdge])))
+							.First(e => e.match.HasValue);
 						Debug.Assert(match.Item2 != null, "match.Item2 != null");
-						int newRot = (4 - match.Item2.Value.Item1) % 4;
-						orderedImage[x, y] = (match.tile, (newRot, false, false));
+						int newRot = match.Item2.Value;
+						match.tile.Trans.rot = newRot;
+						orderedImage[x, y] = match.tile;
 						remainingTiles.Remove(match.tile);
 					} else {
 						//otherwise on the one on the left
 						var neighbor = orderedImage[x - 1, y];
-						var neighborEdge = ApplyTransform(3, neighbor.trans);
+						var neighborEdge = ApplyTransform(3, neighbor.Trans);
 						//find tile to the right of neighbor
-						var match = remainingTiles.Select(tile => (tile, match: MatchingEdge(tile, neighbor.tile
-						.Edges[neighborEdge]))).First(e => e.match.HasValue);
+						var match = remainingTiles.Select(tile => (tile, match: MatchingEdge(tile, neighbor
+							.Edges[neighborEdge]))).FirstOrDefault(e => e.match.HasValue);
+						if (!match.match.HasValue && x == 1)
+						{
+							//flip to other side and try backside
+							neighborEdge = (neighborEdge + 2) % 4;
+							match = remainingTiles.Select(tile => (tile, match: MatchingEdge(tile, neighbor
+								.Edges[neighborEdge]))).First(e => e.match.HasValue);
+							//flip prev tile
+							var previous = orderedImage[x - 1, y];
+							previous.Trans.flipX = true;
+							orderedImage[x - 1, y] = previous;
+						}
 						Debug.Assert(match.match != null, "match.Item2 != null");
-						int newRot = match.match.Value;
+						int newRot = (match.match.Value - 1).Mod(4);
+						
+						match.tile.Trans.rot = newRot;
 
 						bool flipY = false;
 						if (y > 0) {
 							//if it doesnt match vertically, flip it
-							var vertMatch = MatchingEdge(match.tile, orderedImage[x, y - 1].tile)!.Value;
-							if (ApplyTransform(vertMatch.first, (newRot, false, false)) != 0)
+							var vertMatch = MatchingEdge(orderedImage[x, y - 1], 
+								match.tile.Edges[ApplyTransform(0, match.tile.Trans)]).HasValue;
+							if (!vertMatch)
 								flipY = true;
 							//if we're in line 2, also adjust line 1
-							if(y == 1)
-								if (ApplyTransform(vertMatch.second, (newRot, false, false)) != 2) {
+							if (y == 1)
+							{
+								vertMatch = MatchingEdge(match.tile,
+										orderedImage[x, y - 1].Edges[ApplyTransform(2, orderedImage[x, y - 1].Trans)])
+									.HasValue;
+								if (!vertMatch)
+								{
 									var previous = orderedImage[x, y - 1];
-									previous.Item2.flipY = true;
+									previous.Trans.flipY = true;
 									orderedImage[x, y - 1] = previous;
 								}
+							}
 						}
-						
-						orderedImage[x, y] = (match.tile, (newRot, false, flipY));
-						remainingTiles.Remove(match.tile);
 
-						//if we connected to the left to a field starting a row, flip it
-						if (x == 1 && ApplyTransform(match.Item2.Value, neighbor.Item2) == 3) {
-							var previous = orderedImage[x - 1, y];
-							previous.Item2.flipX = true;
-							orderedImage[x - 1, y] = previous;
-						}
+						match.tile.Trans.flipY = flipY;
+						orderedImage[x, y] = match.tile;
+						remainingTiles.Remove(match.tile);
 					}
-					Console.WriteLine(Vis(orderedImage, tileSize));
+					//Console.WriteLine(Vis(orderedImage, tileSize));
 				}
 			}
-			Console.WriteLine(orderedImage);
+			//Console.WriteLine(orderedImage);
+			int resultSize = imageSize * (tileSize - 2);
+			var result = new Flat2D<char>(resultSize, resultSize);
+			for (int y = 0; y < imageSize; y++)
+			{
+				for (int x = 0; x < imageSize; x++)
+				{
+					for (int localY = 1; localY < tileSize - 1; localY++)
+					{
+						for (int localX = 1; localX < tileSize - 1; localX++)
+						{
+							(int x, int y) targetPos = (x * (tileSize-2) + (localX-1), y * (tileSize-2) + (localY-1));
+							(int x, int y) sourcePos = ApplyTransform((localX, localY), orderedImage[x, y].Trans, tileSize);
+							result[targetPos.x, targetPos.y] = orderedImage[x, y].Data[sourcePos.x, sourcePos.y]?'#':'.';
+						}
+					}
+				}
+			}
+
+			var monster = new []
+			{
+				@"                  _ ",
+				@"\    /\    /\    /0\",
+				@" \  /  \  /  \  /   ",
+			};
+			var monsterPositions = monster
+				.SelectMany((line, yIndex) => line
+					.Select((letter, xIndex) => (x: xIndex, y: yIndex, l: letter))
+					.Where(letter => letter.l != ' ')
+					.Select(val => (val.x, val.y))).ToArray();
+			(int x, int y) monsterSize = (monster.First().Length, monster.Length);
+			var transformations = Enumerable.Range(0, 4)
+				.SelectMany(rot => Enumerable.Range(0, 4)
+					.Select(flip => (rot, flip<2, flip%2==0)));
+			int monsterCount = 0;
+			(int, bool, bool) validTrans = default;
+			foreach (var trans in transformations)
+			{
+				validTrans = trans;
+				for (int x = 0; x < resultSize - monsterSize.x; x++)
+				{
+					for (int y = 0; y < resultSize - monsterSize.y; y++)
+					{
+						if (monsterPositions.All(monsterPos =>
+						{
+							var pos = ApplyTransform((x + monsterPos.x, y + monsterPos.y), trans, resultSize);
+							return result[pos.x, pos.y] == '#';
+						}))
+						{
+							monsterCount++;
+							foreach (var monsterPos in monsterPositions)
+							{
+								var pos = ApplyTransform((x + monsterPos.x, y + monsterPos.y), trans, resultSize);
+								result[pos.x, pos.y] = monster[monsterPos.y][monsterPos.x];
+							}
+						}
+					}
+				}
+				if(monsterCount > 0)
+					break;
+			}
+			//var resBuilder = new StringBuilder();
+			for (int y = 0; y < result.Height; y++)
+			{
+				for (int x = 0; x < result.Width; x++)
+				{
+					var pos = ApplyTransform((x, y), validTrans, resultSize);
+					var pixel = result[pos.x, pos.y];
+					Console.ForegroundColor = pixel switch
+					{
+						'.' => ConsoleColor.Blue,
+						'#' => ConsoleColor.White,
+						'0' => ConsoleColor.Red,
+						_ => ConsoleColor.Green,
+					};
+					pixel = pixel switch
+					{
+						'.' => '~',
+						_ => pixel,
+					};
+					Console.Write(pixel);
+				}
+				Console.WriteLine();
+			}
+			Console.WriteLine();
+			Console.ResetColor();
+
+			var solidCount = result.Count(pixel => pixel == '#');
+			Console.WriteLine(solidCount);
 		}
 
-		static string Vis(Flat2D<(Tile tile, (int rot, bool flipX, bool flipY))> tiles, int tileSize) {
+		private static string Vis(Flat2D<char> result)
+		{
+			var builder = new StringBuilder();
+			for (int y = 0; y < result.Height; y++)
+			{
+				for (int x = 0; x < result.Width; x++)
+				{
+					builder.Append(result[x, y]);
+				}
+				builder.AppendLine();
+			}
+			return builder.ToString();
+		}
+
+		static string Vis(Flat2D<Tile> tiles, int tileSize) {
 			var builder = new StringBuilder();
 			for (int y = 0; y < tiles.Height; y++) {
 				for (int localY = 0; localY < tileSize; localY++) {
 					for (int x = 0; x < tiles.Width; x++) {
 						var tile = tiles[x, y];
-						if (tile.tile == null)
+						if (tile == null)
 							builder.Append(string.Join("",Enumerable.Range(0, 10).Select(_=>"?")));
 						else
 							for (int localX = 0; localX < tileSize; localX++) {
-								(int posX, int posY) = ApplyTransform((localX, localY), tile.Item2);
+								(int posX, int posY) = ApplyTransform((localX, localY), tile.Trans, tileSize);
 								(posX, posY) = (posX.Mod(tileSize), posY.Mod(tileSize));
-								builder.Append(tile.tile.Data[posX, posY]?"#":".");
+								builder.Append(tile.Data[posX, posY]?"#":".");
 							}
-						builder.Append(" ");
+						builder.Append(' ');
 					}
-					builder.Append("\n");
+					builder.Append('\n');
 				}
-				builder.Append("\n");
+				builder.Append('\n');
 			}
 
 			return builder.ToString();
 		}
 
 		static int ApplyTransform(int direction, (int rot, bool flipX, bool flipY) transform) {
-			direction += transform.rot;
+			
 			if (transform.flipY && direction % 2 == 0)
 				direction += 2;
 			if (transform.flipX && direction % 2 == 1)
 				direction += 2;
+			direction += transform.rot;
 			return direction % 4;
 		}
 		
-		static (int x, int y) ApplyTransform((int x, int y) pos, (int rot, bool flipX, bool flipY) transform) {
-			for (int i = 0; i < transform.rot; i++) {
-				pos = (pos.y, -pos.x);
-			}
+		static (int x, int y) ApplyTransform((int x, int y) pos, (int rot, bool flipX, bool flipY) transform, int  size) {
+			
 			if (transform.flipY)
-				pos = (pos.x, -pos.y);
+				pos = (pos.x, size - 1 - pos.y);
 			if (transform.flipX)
-				pos = (pos.x, -pos.y);
+				pos = (size - 1 - pos.x, pos.y);
+			for (int i = 0; i < transform.rot; i++) {
+				pos = (pos.y, size - 1 - pos.x);
+			}
 			return pos;
 		}
 
@@ -205,18 +329,34 @@ namespace Day20 {
 			public int Id = -1;
 			public Flat2D<bool> Data;
 			public bool[][] Edges;
+			public (int rot, bool flipX, bool flipY) Trans;
 			
 			public string Vis => ToString();
 
 			public override string ToString() {
 				var builder = new StringBuilder();
-				for (int localY = 0; localY < Data.Height; localY++) {
-					for (int localX = 0; localX < Data.Width; localX++) {
-						(int posX, int posY) = (localX.Mod(Data.Width), localY.Mod(Data.Height));
-						builder.Append(Data[posX, posY]?"#":".");
+				builder.Append("  ");
+				builder.Append(string.Join("", Edges[ApplyTransform(0, Trans)].Select(vis => vis ? '#' : '.')));
+				builder.AppendLine();
+				builder.AppendLine();
+				for (int localY = 0; localY < Data.Height; localY++)
+				{
+					builder.Append(Edges[ApplyTransform(1, Trans)][Data.Height - 1 - localY] ? '#' : '.');
+					builder.Append(' ');
+					for (int localX = 0; localX < Data.Width; localX++)
+					{
+						(int posX, int posY) = ApplyTransform((localX, localY), Trans, Data.Width);
+						builder.Append(Data[posX, posY]?'#':'.');
 					}
-					builder.Append("\n");
+					builder.Append(' ');
+					builder.Append(Edges[ApplyTransform(3, Trans)][localY] ? '#' : '.');
+					builder.AppendLine();
 				}
+
+				builder.AppendLine();
+				builder.Append("  ");
+				builder.Append(string.Join("", Edges[ApplyTransform(2, Trans)].Reverse().Select(vis => vis ? '#' : '.')));
+				builder.AppendLine();
 				return builder.ToString();
 			}
 		}
