@@ -10,7 +10,7 @@
         <e p="Day01.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day01.AssemblyInfo.cs" t="Include" />
             </e>
@@ -23,7 +23,7 @@
         <e p="Day02.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day02.AssemblyInfo.cs" t="Include" />
             </e>
@@ -36,7 +36,7 @@
         <e p="Day03.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day03.AssemblyInfo.cs" t="Include" />
             </e>
@@ -49,7 +49,7 @@
         <e p="Day04.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day04.AssemblyInfo.cs" t="Include" />
             </e>
@@ -62,7 +62,7 @@
         <e p="Day05.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day05.AssemblyInfo.cs" t="Include" />
             </e>
@@ -75,7 +75,7 @@
         <e p="Day06.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day06.AssemblyInfo.cs" t="Include" />
             </e>
@@ -88,7 +88,7 @@
         <e p="Day07.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day07.AssemblyInfo.cs" t="Include" />
             </e>
@@ -101,7 +101,7 @@
         <e p="Day08.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day08.AssemblyInfo.cs" t="Include" />
             </e>
@@ -114,7 +114,7 @@
         <e p="Day09.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day09.AssemblyInfo.cs" t="Include" />
             </e>
@@ -127,7 +127,7 @@
         <e p="Day10.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day10.AssemblyInfo.cs" t="Include" />
             </e>
@@ -140,7 +140,7 @@
         <e p="Day11.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day11.AssemblyInfo.cs" t="Include" />
             </e>
@@ -153,7 +153,7 @@
         <e p="Day12.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day12.AssemblyInfo.cs" t="Include" />
             </e>
@@ -166,7 +166,7 @@
         <e p="Day13.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day13.AssemblyInfo.cs" t="Include" />
             </e>
@@ -179,7 +179,7 @@
         <e p="Day14.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day14.AssemblyInfo.cs" t="Include" />
             </e>
@@ -191,7 +191,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Day15.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day15.AssemblyInfo.cs" t="Include" />
             </e>
@@ -204,7 +204,7 @@
         <e p="Day16.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day16.AssemblyInfo.cs" t="Include" />
             </e>
@@ -217,7 +217,7 @@
         <e p="Day17.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day17.AssemblyInfo.cs" t="Include" />
             </e>
@@ -230,7 +230,7 @@
         <e p="Day18.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day18.AssemblyInfo.cs" t="Include" />
             </e>
@@ -243,7 +243,7 @@
         <e p="Day19.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="Day19.AssemblyInfo.cs" t="Include" />
             </e>
@@ -256,7 +256,7 @@
         <e p="Day20.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp5.0" t="Include">
               <e p="Day20.AssemblyInfo.cs" t="Include" />
             </e>
@@ -269,7 +269,7 @@
         <e p="Day21.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp5.0" t="Include">
               <e p="Day21.AssemblyInfo.cs" t="Include" />
             </e>
@@ -282,9 +282,21 @@
         <e p="Day22.csproj" t="IncludeRecursive" />
         <e p="input.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp5.0" t="Include">
               <e p="Day22.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Day23" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day23.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Day23.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
