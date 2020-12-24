@@ -23,6 +23,7 @@
     <projectFile>Day20/Day20.csproj</projectFile>
     <projectFile>Day22/Day22.csproj</projectFile>
     <projectFile>Day23/Day23.csproj</projectFile>
+    <projectFile>Day24/Day24.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -62,10 +63,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Day15/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/1F/Enum.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/3B/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Day19/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,6 +95,7 @@
     <setting file="file://$PROJECT_DIR$/Day20/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C80B499D-ADA7-49E0-A8EE-7A9B1744160B/e2/4ab69308/DebugProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/52B82C28-59AD-42B4-A74A-A51A769C2E77/24/Repeat.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/17B/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -104,6 +108,8 @@
       <option value="$PROJECT_DIR$/Day22/input.txt" />
       <option value="$PROJECT_DIR$/Day22/Program.cs" />
       <option value="$PROJECT_DIR$/Day23/Program.cs" />
+      <option value="$PROJECT_DIR$/Day24/input.txt" />
+      <option value="$PROJECT_DIR$/Day24/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lSOwmwhfV1pIUKiTt37rO1Ty2H" />
@@ -123,7 +129,7 @@
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Day23">
+  <component name="RunManager" selected=".NET Project.Day24">
     <configuration name="Day1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -412,6 +418,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Day24" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day24/Day24.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Day3" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -571,7 +595,7 @@
       <workItem from="1608641064853" duration="17321000" />
       <workItem from="1608712012306" duration="3681000" />
       <workItem from="1608716037362" duration="7979000" />
-      <workItem from="1608724281569" duration="12565000" />
+      <workItem from="1608724281569" duration="17375000" />
     </task>
     <servers />
   </component>
@@ -650,6 +674,19 @@
           </properties>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Day24/Program.cs</url>
+          <line>53</line>
+          <properties documentPath="D:\Dev\Projects\AOC2020\Day24\Program.cs" initialLine="53" containingFunctionPresentation="method 'CellularAutomaton'">
+            <startOffsets>
+              <option value="1819" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1837" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -658,14 +695,5 @@
         <PinnedItemInfo parentTag="Frame#Day22.Program.&lt;Main&gt;g__playRecursive|0_1" memberName="p2Card" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="DotNetProject">
-        <watch expression="(current as IEnumerable&lt;Item&gt;).All(i =&gt; i.Prev.Next == i &amp;&amp; i.Next.Prev == i)" language="C#" />
-        <watch expression="(current as IEnumerable&lt;Item&gt;).Count()" language="C#" />
-        <watch expression="(current as IEnumerable&lt;Item&gt;).Where(i =&gt; i.Prev.Next == i &amp;&amp; i.Next.Prev == i)" language="C#" />
-        <watch expression="(this as IEnumerable&lt;Item&gt;).Where(i =&gt; i.Prev.Next == i &amp;&amp; i.Next.Prev == i).ToArray()" language="C#" />
-        <watch expression="(current as IEnumerable&lt;Item&gt;).Where(i =&gt; i.Prev.Next == i &amp;&amp; i.Next.Prev == i)" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

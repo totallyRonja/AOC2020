@@ -302,6 +302,19 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="Day24" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day24.csproj" t="IncludeRecursive" />
+        <e p="input.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Day24.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
