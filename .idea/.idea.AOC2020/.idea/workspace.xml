@@ -46,6 +46,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c63b20-fb30-48dd-bcab-fd3859fd0df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOC2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day25/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day25/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -614,7 +615,7 @@
       <workItem from="1608641064853" duration="17321000" />
       <workItem from="1608712012306" duration="3681000" />
       <workItem from="1608716037362" duration="7979000" />
-      <workItem from="1608724281569" duration="20048000" />
+      <workItem from="1608724281569" duration="21407000" />
     </task>
     <servers />
   </component>
@@ -711,10 +712,10 @@
           <line>15</line>
           <properties documentPath="D:\Dev\Projects\AOC2020\Day25\Program.cs" initialLine="15" containingFunctionPresentation="method 'Main'">
             <startOffsets>
-              <option value="519" />
+              <option value="539" />
             </startOffsets>
             <endOffsets>
-              <option value="681" />
+              <option value="701" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="67" />

@@ -12,7 +12,7 @@ namespace Day25
             var doorLoop = FindLoopSize(7, doorPub);//optional
             var cardLoop = FindLoopSize(7, cardPub);
             var encryptCard = Transform(doorPub, cardLoop);
-            var encryptDoor = Transform(cardPub, doorLoop); //optional
+            var encryptDoor = Transform(cardPub, doorLoop); //optional (equal encryptCard)
             Console.WriteLine($"The door loops {doorLoop} times, the card loops {cardLoop} times and the encryption key" +
                               $"is {encryptCard}");
         }
@@ -26,14 +26,13 @@ namespace Day25
             return key;
         }
 
-        static int FindLoopSize(int subject, int key) {
+        static int FindLoopSize(int subject, int targetKey) {
             int loopSize = 0;
-            while (key != 1) {
+            long key = 1;
+            while (key != targetKey) {
                 loopSize++;
-                //undo modulo until stuff works
-                while (key % subject != 0)
-                    key += 20201227;
-                key /= subject;
+                key *= subject;
+                key %= 20201227;
             }
             return loopSize;
         }
